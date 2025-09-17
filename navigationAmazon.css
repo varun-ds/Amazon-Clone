@@ -1,0 +1,183 @@
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(51, 68, 75);
+    color: white;
+    font-size: 15px;
+    height: 35px;
+    width: 100%;
+}
+nav ul{
+    background-color:rgb(51, 68, 75) ;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 5px 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+}
+
+header{
+    background-color: #232F3E;
+    width: 100%;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+}
+.logo{
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+
+.search{
+    position: absolute;
+    top:10px;
+    left:300px;
+    height: 40px;
+    width: 700px;
+    border-radius: 5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#homeAdds{
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    overflow: hidden;
+}
+
+.slides{
+    height: 500px;
+    width: 100%;
+    animation-name: HomeAddAnimation;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.slides:nth-child(1)
+{
+    animation-delay: 0s;
+}
+.slides:nth-child(2)
+{
+    animation-delay: 6s;
+}
+.slides:nth-child(3)
+{
+    animation-delay: 12s;
+}
+.slides:nth-child(4)
+{
+    animation-delay: 18s;
+}
+.slides:nth-child(5)
+{
+    animation-delay: 24s;
+}
+
+@keyframes HomeAddAnimation {
+    0%   { opacity: 1; }
+    20%  { opacity: 1; }  /* Fully visible for most of the time */
+    30%  { opacity: 0; }  /* Fade out during overlap */
+    100% { opacity: 0; }
+}
+
+#boxes{
+    height: 1000px;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.329);
+    position: absolute;
+    top: 370px;
+    left: 0px;
+    justify-content:space-around;
+    display: flex;
+    align-items: center;
+    
+}
+
+.box:nth-child(1)
+{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    background-size: 300px 400px;
+    border-radius: 10px;
+    position:absolute;
+    top:20px;
+    left: 20px;
+    
+}
+.box:nth-child(2)
+{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    background-size: 300px 400px;
+    border-radius: 10px;
+    position:absolute;
+    top:20px;
+    left: 30px;
+    
+}
+.box:nth-child(3)
+{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    background-size: 300px 400px;
+    border-radius: 10px;
+    position:absolute;
+    top:20px;
+    left: 60px;
+    
+}
+.box:nth-child(4)
+{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    background-size: 300px 400px;
+    border-radius: 10px;
+    position:absolute;
+    top:20px;
+    left: 20px;
+    
+}
+.box:nth-child(5)
+{
+    height: 400px;
+    width: 300px;
+    background-color: red;
+    background-size: 300px 400px;
+    border-radius: 10px;
+    position:absolute;
+    top:20px;
+    left: 20px;
+    
+}
+
